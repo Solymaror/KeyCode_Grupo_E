@@ -111,34 +111,34 @@ function App() {
   ]);
 
   /* Listado tipos de Camionetas */
-  const [tiposBicicletas, setTiposBicicletas] = useState([
+  const [tiposCamionetas, setTiposCamionetas] = useState([
     {
       id: 1,
-      nombre: "Trek",
+      nombre: "Toyota Hilux",
       descripcion:
-        "Una de las marcas más grandes y conocidas del mundo. Ofrece bicicletas de carretera, montaña y eléctricas.",
-      precio: 5000000,
+        "Toyota Hilux 2024, 4x4, motor diésel de 2.8 litros, capacidad de carga de 1 tonelada. Ideal para terrenos difíciles y uso rudo.",
+      precio:150000000,
     },
     {
       id: 2,
-      nombre: "Specialized",
+      nombre: "Ford Ranger 2024",
       descripcion:
-        "Famosa por sus bicicletas de montaña y de carretera de alta calidad. Es conocida por su innovación tecnológica.",
-      precio: 2000000,
+        "Ford Ranger 2024, 4x4, motor turbo diésel de 3.2 litros, equipado con tecnología de asistencia en manejo todo terreno.",
+      precio: 150000000,
     },
     {
       id: 3,
-      nombre: "Cannondale",
+      nombre: "Chevrolet Colorado 2024",
       descripcion:
-        "Reconocida por sus bicicletas ligeras y de alto rendimiento, tanto de montaña como de carretera",
-      precio: 3000000,
+        "Chevrolet Colorado 2024, motor V6 de 3.6 litros, capacidad de remolque de hasta 3,500 kg, con diseño robusto y cómodo.",
+      precio: 147200000,
     },
     {
       id: 4,
-      nombre: "Giant",
+      nombre: "Nissan Frontier 2024",
       descripcion:
-        "Es uno de los fabricantes de bicicletas más grandes del mundo. Ofrecen una amplia gama de bicicletas, desde básicas hasta profesionales.",
-      precio: 7000000,
+        "Nissan Frontier 2024, 4x4, motor de 2.5 litros, equipado con sistema de control dinámico en curvas y asistente de ascenso en pendientes.",
+      precio: 136000000,
     },
   ]);
 
@@ -184,7 +184,7 @@ function App() {
           {/* Pagina individual de las camionetas */}
           <Route
             path="/camionetas/:id"
-            element={<CamionetasDetalle tiposBicicletas={tiposBicicletas} />}
+            element={<CamionetasDetalle tiposCamionetas={tiposCamionetas} />}
           />
 
           {/* Ruta de error */}
