@@ -4,7 +4,7 @@ import { FaCar, FaMotorcycle, FaBicycle, FaTruck } from "react-icons/fa"
 
 const Menu = () => {
   return (
-    <nav className="menu flex space-x-4 bg-slate-900 p-4 uppercase my-10 border-solid border  border-gray-600 rounded-xl">
+    <nav className="flex p-4 my-10 space-x-4 uppercase border border-gray-600 border-solid menu bg-slate-900 rounded-xl">
       <NavLink
         className={({ isActive }) =>
           isActive

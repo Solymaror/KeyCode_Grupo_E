@@ -7,7 +7,7 @@ import { Link } from "react-router-dom"
         <ul>
           {tiposCarros.map((tipoCarros) => (
             <li key={tipoCarros.id}>
-              <Link to={`/Motos/${tipoCarros.id}`}>{tipoCarros.nombre}</Link>
+              <Link to={`/carros/${tipoCarros.id}`}>{tipoCarros.nombre}</Link>
             </li>
           ))}
         </ul>

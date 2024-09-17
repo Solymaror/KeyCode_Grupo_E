@@ -147,7 +147,7 @@ function App() {
     <>
       {/* Enrutador general */}
       <BrowserRouter>
-        <h1 className="text-sky-500 font-semibold uppercase text-5xl tracking-wide">
+        <h1 className="text-5xl font-semibold tracking-wide uppercase text-sky-500">
           Concesionario
         </h1>
         {/* Componente Menu */}
