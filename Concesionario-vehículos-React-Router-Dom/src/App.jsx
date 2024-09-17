@@ -52,31 +52,31 @@ function App() {
   const [tiposCarros, setTiposCarros] = useState([
     {
       id: 1,
-      nombre: "Trek",
+      nombre: "Maserati MC20",
       descripcion:
-        "Una de las marcas más grandes y conocidas del mundo. Ofrece bicicletas de carretera, montaña y eléctricas.",
-      precio: 5000000,
+        "El superdeportivo de Maserati que desafía los límites del tiempo. Avanza hacia un emocionante y nuevo futuro.",
+      precio: 1293320031,
     },
     {
       id: 2,
-      nombre: "Specialized",
+      nombre: "Ferrari F50",
       descripcion:
-        "Famosa por sus bicicletas de montaña y de carretera de alta calidad. Es conocida por su innovación tecnológica.",
-      precio: 2000000,
+        "Creado para celebrar el 50 aniversario de Ferrari, el F50 fue lo más cercano a un Fórmula 1 de calle que la compañía había construido hasta la fecha.",
+      precio: 23373747360,
     },
     {
       id: 3,
-      nombre: "Cannondale",
+      nombre: "Pagani Huayra",
       descripcion:
-        "Reconocida por sus bicicletas ligeras y de alto rendimiento, tanto de montaña como de carretera",
-      precio: 3000000,
+        "El Pagani Huayra es un automóvil superdeportivo producido por el fabricante italiano Pagani Automobili S.p.A. El nombre proviene de huayra, que significa viento en quechua",
+      precio: 32739737079,
     },
     {
       id: 4,
-      nombre: "Giant",
+      nombre: "Mercedes-Benz EQS",
       descripcion:
-        "Es uno de los fabricantes de bicicletas más grandes del mundo. Ofrecen una amplia gama de bicicletas, desde básicas hasta profesionales.",
-      precio: 7000000,
+        "El Mercedes-Benz EQS es el sedán eléctrico que redefine el confort, con un diseño elegante y vanguardista, autonomía impresionante y tecnología de última generación",
+      precio: 649900000,
     },
   ]);
   /* Listado tipos de Motos */
