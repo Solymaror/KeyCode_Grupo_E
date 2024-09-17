@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 /** Archivo de barril que contiene todas mis paginas */
 import {
@@ -117,7 +118,7 @@ function App() {
       nombre: "Toyota Hilux",
       descripcion:
         "Toyota Hilux 2024, 4x4, motor diésel de 2.8 litros, capacidad de carga de 1 tonelada. Ideal para terrenos difíciles y uso rudo.",
-      precio:150000000,
+      precio: 150000000,
     },
     {
       id: 2,
@@ -146,14 +147,16 @@ function App() {
     <>
       {/* Enrutador general */}
       <BrowserRouter>
-        <h1>Concesionario</h1>
+        <h1 className="text-sky-500 font-semibold uppercase text-5xl tracking-wide">
+          Concesionario
+        </h1>
         {/* Componente Menu */}
         <Menu />
         {/* Contenedor de rutas */}
         <Routes>
           {/* Rutas individuales */}
           {/* Página de carros */}
-          <Route path="/" element={<Carros tiposCarros={tiposCarros}/>} />
+          <Route path="/" element={<Carros tiposCarros={tiposCarros} />} />
           {/* Pagina individual de los tipos de carros */}
           <Route
             path="/carros/:id"
@@ -161,8 +164,7 @@ function App() {
           />
 
           {/* Página de motos */}
-          <Route path="/motos" 
-          element={<Motos tiposMotos={tiposMotos} />} />
+          <Route path="/motos" element={<Motos tiposMotos={tiposMotos} />} />
           {/* Pagina individual de los tipos de motos */}
           <Route
             path="/motos/:id"
@@ -181,7 +183,10 @@ function App() {
           />
 
           {/* Pagina general de camionetas */}
-          <Route path="/camionetas" element={<Camionetas tiposCamionetas={tiposCamionetas} />} />
+          <Route
+            path="/camionetas"
+            element={<Camionetas tiposCamionetas={tiposCamionetas} />}
+          />
           {/* Pagina individual de las camionetas */}
           <Route
             path="/camionetas/:id"
