@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 /** Archivo de barril que contiene todas mis paginas */
 import {
@@ -48,7 +49,7 @@ function App() {
     },
   ]);
   /* Listado tipos de Carros */
-  const [tiposBicicletas, setTiposBicicletas] = useState([
+  const [tiposCarros, setTiposCarros] = useState([
     {
       id: 1,
       nombre: "Trek",
@@ -117,7 +118,7 @@ function App() {
       nombre: "Toyota Hilux",
       descripcion:
         "Toyota Hilux 2024, 4x4, motor diésel de 2.8 litros, capacidad de carga de 1 tonelada. Ideal para terrenos difíciles y uso rudo.",
-      precio:150000000,
+      precio: 150000000,
     },
     {
       id: 2,
@@ -146,26 +147,28 @@ function App() {
     <>
       {/* Enrutador general */}
       <BrowserRouter>
-        <h1>Concesionario</h1>
+        <h1 className="text-5xl font-semibold tracking-wide uppercase text-sky-500">
+          Concesionario
+        </h1>
         {/* Componente Menu */}
         <Menu />
         {/* Contenedor de rutas */}
         <Routes>
           {/* Rutas individuales */}
           {/* Página de carros */}
-          <Route path="/" element={<Carros />} />
+          <Route path="/" element={<Carros tiposCarros={tiposCarros} />} />
           {/* Pagina individual de los tipos de carros */}
           <Route
             path="/carros/:id"
-            element={<CarrosDetalle tiposBicicletas={tiposBicicletas} />}
+            element={<CarrosDetalle tiposCarros={tiposCarros} />}
           />
 
           {/* Página de motos */}
-          <Route path="/motos" element={<Motos />} />
+          <Route path="/motos" element={<Motos tiposMotos={tiposMotos} />} />
           {/* Pagina individual de los tipos de motos */}
           <Route
             path="/motos/:id"
-            element={<MotosDetalle tiposBicicletas={tiposBicicletas} />}
+            element={<MotosDetalle tiposMotos={tiposMotos} />}
           />
 
           {/* Pagina  de bicicletas*/}
@@ -180,7 +183,10 @@ function App() {
           />
 
           {/* Pagina general de camionetas */}
-          <Route path="/camionetas" element={<Camionetas />} />
+          <Route
+            path="/camionetas"
+            element={<Camionetas tiposCamionetas={tiposCamionetas} />}
+          />
           {/* Pagina individual de las camionetas */}
           <Route
             path="/camionetas/:id"

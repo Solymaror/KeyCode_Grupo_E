@@ -46,8 +46,3 @@
     justify-content: space-evenly;
   }
   
-  .active-link{
-    border-bottom: thin solid rgb(255, 255, 255);
-    padding-bottom: 0.5rem;
-    font-weight: bold;
-  }
