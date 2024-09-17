@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useParams, useNavigate } from "react-router-dom";
+import { FaArrowLeft } from "react-icons/fa";
 
 export const CamionetasDetalle = ({ tiposCamionetas }) => {
   /** Uso lo que importe para navegar a algun sitio */
@@ -17,12 +18,22 @@ export const CamionetasDetalle = ({ tiposCamionetas }) => {
   };
 
   return (
-    <section>
-      <h1>Detalle de la camioneta:</h1>
-      <h2>Nombre Camioneta: {infoCamioneta.nombre}</h2>
-      <p>Descripción:{infoCamioneta.descripcion} </p>
-      <h3>Precio: $ {infoCamioneta.precio}</h3>
-      <button onClick={funcionNavegar}>Regresar</button>
+    <section className="flex items-center justify-center py-20 border border-gray-600 bg-slate-800 rounded-xl">
+      <div className="p-6 rounded-lg shadow-md bg-slate-900 w-80">
+      <h1 className="mb-4 text-2xl font-bold text-center uppercase text-orange-400 ">Detalle de la camioneta:</h1>
+      <h2 className="mb-2 text-xl font-semibold"> {infoCamioneta.nombre}</h2>
+      <p className="mb-4 italic text-gray-500">{infoCamioneta.descripcion} </p>
+      <h3 className="mb-4 text-lg font-medium">Precio: $ {infoCamioneta.precio}</h3>
+      <button 
+      
+        onClick={funcionNavegar}
+        className="flex items-center justify-center w-full px-4 py-2 font-semibold uppercase transition duration-300 ease-in-out rounded-lg text-slate-800 text-late-900 bg-orange-400 hover:bg-orange-400"
+      
+      >
+        <FaArrowLeft className="mr-2" /> {/* Icono con margen a la derecha */}
+        Regresar
+      </button>
+      </div>
     </section>
   );
 };
