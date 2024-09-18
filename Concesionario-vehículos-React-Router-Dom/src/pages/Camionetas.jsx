@@ -11,7 +11,13 @@ export const Camionetas = ({ tiposCamionetas}) => {
             
             className="w-full px-4 py-2 font-semibold text-center uppercase transition ease-in-out delay-150 transform border border-gray-600 border-solid rounded-lg text-orange-400 btn hover:bg-orange-400 hover:text-slate-900 hover:font-semibold "
 
-            >{tipoCamionetas.nombre}</Link>
+            >
+              {tipoCamionetas.nombre}
+              <img 
+              className="object-cover m-auto my-5 border-solid rounded-lg w-100 h-60"
+              src={tipoCamionetas.img} 
+              alt={tipoCamionetas.nombre} />
+            </Link>
           </li>
         ))}
       </ul>
