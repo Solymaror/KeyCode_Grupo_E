@@ -11,7 +11,12 @@ import { Link } from "react-router-dom"
                 to={`/carros/${tipoCarros.id}`}
                 className="w-full px-4 py-2 font-semibold text-center uppercase transition ease-in-out delay-150 transform border border-gray-500 border-solid rounded-lg text-cyan-400 btn hover:bg-cyan-500 hover:text-slate-900 hover:font-semibold"
               >
-                  {tipoCarros.nombre}
+                {tipoCarros.nombre}
+                <img
+                  className="object-cover m-auto my-5 border-solid rounded-lg w-100 h-60"
+                  src={tipoCarros.img}
+                  alt={tipoCarros.nombre}
+              />
               </Link>
             </li>
           ))}
