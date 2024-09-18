@@ -56,6 +56,7 @@ function App() {
       descripcion:
         "El superdeportivo de Maserati que desafía los límites del tiempo. Avanza hacia un emocionante y nuevo futuro.",
       precio: 1293320031,
+      img: "https://assets.local-car-finder.com/images/_2023/maserati/mc20/2023-maserati-mc20-main.png"
     },
     {
       id: 2,
@@ -63,6 +64,7 @@ function App() {
       descripcion:
         "Creado para celebrar el 50 aniversario de Ferrari, el F50 fue lo más cercano a un Fórmula 1 de calle que la compañía había construido hasta la fecha.",
       precio: 23373747360,
+      img: "https://www.pngplay.com/wp-content/uploads/13/Ferrari-F50-Transparent-Image.png"
     },
     {
       id: 3,
@@ -70,6 +72,7 @@ function App() {
       descripcion:
         "El Pagani Huayra es un automóvil superdeportivo producido por el fabricante italiano Pagani Automobili S.p.A. El nombre proviene de huayra, que significa viento en quechua",
       precio: 32739737079,
+      img: "https://purepng.com/public/uploads/large/purepng.com-pagani-huayra-sports-carcarcarsvehiclevehiclestransport-561521126343mx1ua.png"
     },
     {
       id: 4,
@@ -77,6 +80,7 @@ function App() {
       descripcion:
         "El Mercedes-Benz EQS es el sedán eléctrico que redefine el confort, con un diseño elegante y vanguardista, autonomía impresionante y tecnología de última generación",
       precio: 649900000,
+      img: "https://assets.local-car-finder.com/images/_2022/mercedes-benz/eqs/450-Sedan.png"
     },
   ]);
   /* Listado tipos de Motos */
