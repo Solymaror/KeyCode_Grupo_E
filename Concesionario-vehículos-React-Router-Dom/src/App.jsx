@@ -87,6 +87,7 @@ function App() {
       descripcion:
         "Una moto de aventura compacta, ideal para caminos off-road y uso urbano.",
       precio: 8000000,
+      img: "https://www.incolmotos-yamaha.com.co/wp-content/uploads/2018/03/xtz-125-azul.jpg"
     },
     {
       id: 2,
@@ -94,6 +95,7 @@ function App() {
       descripcion:
         "Motocicleta cruiser con un motor V-twin de 883 cc. Estilo clásico y potente.",
       precio: 20000000,
+      img:"https://http2.mlstatic.com/D_NQ_NP_780985-MCO79320962273_092024-O.webp"
     },
     {
       id: 3,
@@ -101,6 +103,7 @@ function App() {
       descripcion:
         "Deportiva con un motor de 599 cc. Ideal para velocidad y rendimiento en pista.",
       precio: 12000000,
+      img: "https://http2.mlstatic.com/D_NQ_NP_2X_957671-MCO78962884212_092024-F.webp"
     },
     {
       id: 4,
@@ -108,6 +111,7 @@ function App() {
       descripcion:
         "Motocicleta de aventura con tecnología avanzada y alto rendimiento en terrenos variados.",
       precio: 18000000,
+      img:"https://http2.mlstatic.com/D_NQ_NP_2X_914301-MCO77736336639_072024-F.webp"
     },
   ]);
 

@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 export const Motos = ({ tiposMotos }) => {
   return (
     <div className="container px-4 py-6 mx-auto">
-      <h1 className="mb-6 text-2xl font-semibold tracking-wide text-center uppercase text-lime-500">Motocicletas</h1>
+      <h1 className="mb-6 text-2xl font-semibold tracking-wide text-center uppercase text-lime-500">
+        Motocicletas
+      </h1>
       <ul className="grid grid-cols-2 gap-4">
         {tiposMotos.map((tipoMoto) => (
           <li key={tipoMoto.id} className="flex justify-center">
@@ -13,6 +15,11 @@ export const Motos = ({ tiposMotos }) => {
               className="w-full px-4 py-2 font-semibold text-center uppercase transition ease-in-out delay-150 transform border border-gray-600 border-solid rounded-lg text-lime-500 btn hover:bg-lime-500 hover:text-slate-900 hover:font-semibold "
             >
               {tipoMoto.nombre}
+              <img
+                className="object-cover m-auto my-5 border-solid rounded-lg w-60 h-60"
+                src={tipoMoto.img}
+                alt={tipoMoto.nombre}
+              />
             </Link>
           </li>
         ))}
