@@ -123,6 +123,7 @@ function App() {
       descripcion:
         "Toyota Hilux 2024, 4x4, motor diésel de 2.8 litros, capacidad de carga de 1 tonelada. Ideal para terrenos difíciles y uso rudo.",
       precio: 150000000,
+      img:"https://toyotacvi.com.co/wp-content/uploads/2021/03/4.-Hilux-TP-Plata-metalico.png"
     },
     {
       id: 2,
@@ -130,6 +131,7 @@ function App() {
       descripcion:
         "Ford Ranger 2024, 4x4, motor turbo diésel de 3.2 litros, equipado con tecnología de asistencia en manejo todo terreno.",
       precio: 150000000,
+      img:"https://live.dealer-asset.co/images/br1166/product/paintSwatch/vehicle/ford-paraguay-nueva-ranger-naranja.png?s=1024"
     },
     {
       id: 3,
@@ -137,6 +139,7 @@ function App() {
       descripcion:
         "Chevrolet Colorado 2024, motor V6 de 3.6 litros, capacidad de remolque de hasta 3,500 kg, con diseño robusto y cómodo.",
       precio: 147200000,
+      img:"https://vehicle-images.dealerinspire.com/stock-images/chrome/2a4dcf28583a56f2da23704db72a6d83.png"
     },
     {
       id: 4,
@@ -144,6 +147,7 @@ function App() {
       descripcion:
         "Nissan Frontier 2024, 4x4, motor de 2.5 litros, equipado con sistema de control dinámico en curvas y asistente de ascenso en pendientes.",
       precio: 136000000,
+      img:"https://vehicle-images.dealerinspire.com/stock-images/chrome/51f934327788d5983ba90216e734b085.png" 
     },
   ]);
 

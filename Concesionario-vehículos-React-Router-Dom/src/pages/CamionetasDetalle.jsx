@@ -28,7 +28,7 @@ export const CamionetasDetalle = ({ tiposCamionetas }) => {
       
         onClick={funcionNavegar}
         className="flex items-center justify-center w-full px-4 py-2 font-semibold uppercase transition duration-300 ease-in-out rounded-lg text-slate-800 text-late-900 bg-orange-400 hover:bg-orange-400"
-      
+        
       >
         <FaArrowLeft className="mr-2" /> {/* Icono con margen a la derecha */}
         Regresar
